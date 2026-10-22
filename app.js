@@ -35,7 +35,7 @@ async function updateDownload() {
       list.append(item);
     }
   } catch {
-    statusLine.textContent = '자동 확인이 지연되고 있습니다. 버튼은 확인된 v1.8을 받습니다.';
+    statusLine.textContent = '자동 확인이 지연되고 있습니다. 버튼은 확인된 v1.9을 받습니다.';
     document.getElementById('release').href = repository + '/releases';
     document.getElementById('release').textContent = '최신 버전 직접 확인 ↗';
   }
