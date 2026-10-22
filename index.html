@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#0b232d">
-  <meta name="description" content="SKIPTIDE Android 테스트 버전. 최신 APK와 업데이트 내용을 한곳에서 확인하세요.">
+  <meta name="description" content="SKIPTIDE Android·Windows 테스트 버전. 최신 APK, PC 게임과 무음 성장 봇을 한곳에서 받으세요.">
   <title>SKIPTIDE · 다운로드</title>
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
 </head>
 <body>
-  <header class="top"><a class="wordmark" href="./" aria-label="SKIPTIDE 홈">SKIPTIDE<span class="dot">.</span></a><span class="edition">ANDROID PLAYTEST</span></header>
+  <header class="top"><a class="wordmark" href="./" aria-label="SKIPTIDE 홈">SKIPTIDE<span class="dot">.</span></a><span class="edition">ANDROID · WINDOWS</span></header>
   <main>
     <section class="hero" aria-labelledby="title">
       <div class="intro">
@@ -19,8 +19,8 @@
         <h1 id="title">SKIPTIDE</h1>
         <p class="description">강변에서 시작하는 물수제비.<br>돌을 고르고, 강화하고, 새로운 물길로.</p>
         <div class="download-area">
-          <p class="version"><strong id="version">v1.12</strong><span id="size">34.3 MB</span><span>Android APK</span></p>
-          <a id="download" class="download" href="https://github.com/gdjadenchoi/skiptide-downloads/releases/download/v1.12-playtest/SKIPTIDE.apk"><span>Android 다운로드</span><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 2h4v10h4v3h-3v3H9v-3H6v-3h4zM3 19h18v3H3z"/></svg></a>
+          <p class="version"><strong id="version">v1.13</strong><span id="size">크기 확인 중</span><span>Android APK</span></p>
+          <a id="download" class="download" href="https://github.com/gdjadenchoi/skiptide-downloads/releases/download/v1.13-playtest/SKIPTIDE.apk"><span>Android 다운로드</span><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 2h4v10h4v3h-3v3H9v-3H6v-3h4zM3 19h18v3H3z"/></svg></a>
           <p id="status" class="status" role="status">최신 버전을 확인하고 있습니다.</p>
           <p class="device-note">Android 8.0 이상 · ARM64 · 세로 화면<br>iPhone에서는 설치할 수 없습니다.</p>
         </div>
@@ -28,9 +28,23 @@
       </div>
       <figure class="preview"><img src="assets/journey-1.10.png" width="720" height="1280" alt="폭포 협곡에서 돌을 준비하는 SKIPTIDE 실제 게임 화면"><figcaption><span class="signal" aria-hidden="true"></span> 개발 중 실제 게임 화면 · 폭포 협곡</figcaption></figure>
     </section>
+    <section class="pc" aria-labelledby="pc-title">
+      <div class="section-heading"><h2 id="pc-title">Windows에서 플레이·테스트</h2><span id="windows-version" class="pc-version">v1.13</span></div>
+      <div class="pc-download">
+        <a id="download-windows" class="download secondary" href="https://github.com/gdjadenchoi/skiptide-downloads/releases/download/v1.13-playtest/SKIPTIDE-Windows.zip">Windows ZIP 다운로드 <span aria-hidden="true">↓</span></a>
+        <p>ZIP을 <b>전체 압축 해제</b>한 뒤 <code>SKIP.exe</code>를 실행하세요.<br>게임 데이터 폴더를 함께 두어야 합니다.</p>
+      </div>
+      <p id="windows-status" class="status" role="status">PC 버전을 확인하고 있습니다.</p>
+      <details class="bot-guide"><summary>무음 성장 봇 실행하기 · v1.13부터 포함</summary>
+        <p><code>Bot/RunLearningBot.cmd</code>를 실행하면 새 게임 <b>30개를 각각 20분</b>씩 시뮬레이션합니다. 오래 플레이하는 조건은 <code>Bot/RunLearningBot-Long.cmd</code>로 <b>6개를 각각 120분</b>씩 검사합니다.</p>
+        <p>처음에는 서툴고 점점 익숙해지는 봇입니다. 계산은 배속으로 진행하며, 위 시간은 실제로 기다리는 시간이 아닌 <b>모델링한 플레이 시간</b>입니다. 실제 사람의 재미나 조작감을 대신 검증하지는 않습니다.</p>
+        <p>소리 없이 실행하고 일반 게임 저장과 분리합니다. <b>로그 자동 업로드는 없습니다.</b> 완료 후 실행 창에 표시되는 로그 ZIP을 개발 대화에 첨부해주세요.</p>
+        <p>로그 위치: <code>%LOCALAPPDATA%\SKIPTIDE\BotRuns</code><br>Windows 탐색기 주소창에 붙여 넣으면 열 수 있습니다.</p>
+      </details>
+    </section>
     <section class="updates" aria-labelledby="updates-title">
-      <div class="section-heading"><h2 id="updates-title">이번 업데이트</h2><a id="release" href="https://github.com/gdjadenchoi/skiptide-downloads/releases/tag/v1.12-playtest">자세히 보기 ↗</a></div>
-      <ul id="changes"><li>초반 스탯 구매 비용 감소·투척력 강화 폭 증가</li><li>갈대 여울 160m 해금·초보 학습 봇 10~15분 도달</li><li>과거 투척 기록을 분리 보관해 장기 저장 지연 개선</li><li>중복 저장 감소·기존 성장과 기록 유지</li><li>입력 판정·스핀 인식·수면 접촉 공식 유지</li></ul>
+      <div class="section-heading"><h2 id="updates-title">이번 업데이트</h2><a id="release" href="https://github.com/gdjadenchoi/skiptide-downloads/releases/tag/v1.13-playtest">자세히 보기 ↗</a></div>
+      <ul id="changes"><li>초반 물수제비와 첫 급류 체험 조정</li><li>특수 선택 간격 단축·기본 스탯 골드 구매 유지</li><li>해금 지역으로 결과·강화 화면에서 바로 출발</li><li>갈대 씨앗 회전 보너스·첫 3지역 도전 구분</li><li>후반 연쇄 충격 수정·Windows 무음 성장 봇 동봉</li></ul>
     </section>
     <section class="install" aria-labelledby="install-title">
       <h2 id="install-title">설치 안내</h2>
